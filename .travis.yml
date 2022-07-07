@@ -1,0 +1,8 @@
+language: objective-c
+osx_image: xcode9
+
+script:
+
+    - xcodebuild -project Example-Objc/FSCalendar.xcodeproj -sdk iphonesimulator -alltargets
+    - xcodebuild -project Example-Swift/FSCalendarSwiftExample.xcodeproj -sdk iphonesimulator -alltargets
+    - xcodebuild -project Example-TodayExtension/Example-TodayExtension.xcodeproj -sdk iphonesimulator -alltargets
